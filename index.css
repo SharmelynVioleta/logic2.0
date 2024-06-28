@@ -1,0 +1,36 @@
+.container {
+  background-color: #001e88;
+  background-image: url("./imgs/background_image.png");
+  height: 100vh;
+  width: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  border-radius: 40px;
+  width: 80px;
+  height: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  position: absolute;
+  cursor: move;
+}
+
+.container_inputs {
+  padding-top: 80px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputs_reto {
+  font-size: 22px;
+  font-weight: 700;
+}

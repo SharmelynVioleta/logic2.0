@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logic quest</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div style="display: flex">
+        <div class="message">
+          <img
+            style="position: relative"
+            src="./imgs/buho.png"
+            alt="message"
+            width="140px"
+          />
+        </div>
+        <div class="message" style="position: relative">
+          <img src="./imgs/nube.png" alt="message" width="240px" />
+          <span
+            style="
+              position: absolute;
+              top: 40px;
+              left: 20px;
+              width: 200px;
+              text-align: center;
+            "
+          >
+            ¿Sabías que los datos se pueden agrupar de muchas formas?</span
+          >
+        </div>
+      </div>
+
+      <div
+        style="
+          color: white;
+          text-align: center;
+          font-size: 30px;
+          padding-top: 30px;
+          padding-bottom: 30px;
+        "
+      >
+        <span id="text_title">Selecciona el tipo</span>
+      </div>
+
+      <div style="position: relative">
+        <img src="./imgs/cofre2.png" alt="" />
+        <img
+          id="img_mano"
+          src="./imgs/mano.png"
+          style="
+            position: absolute;
+            top: 100px;
+            left: 30px;
+            z-index: 10;
+            transition: all 1s;
+          "
+          alt=""
+        />
+        <div
+          id="entero_item"
+          class="item"
+          style="top: 85px; left: 90px; background-color: yellow"
+          draggable="true"
+        >
+          entero
+        </div>
+        <div
+          class="item"
+          style="top: 85px; left: 190px; background-color: green"
+        >
+          decimal
+        </div>
+        <div
+          class="item"
+          style="top: 125px; left: 140px; background-color: green"
+        >
+          caracter
+        </div>
+      </div>
+
+      <div class="container_inputs">
+        <input
+          class="inputs_reto"
+          id="first_input"
+          style="width: 90px; height: 25px; border-radius: 20px"
+          type="text"
+        />
+        <input
+          class="inputs_reto"
+          id="second_input"
+          style="width: 110px; height: 25px; border-radius: 20px"
+          type="text"
+          disabled
+        />
+        <input
+          class="inputs_reto"
+          id="third_input"
+          type="number"
+          style="width: 90px; height: 25px; border-radius: 20px"
+          type="text"
+          disabled
+        />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
